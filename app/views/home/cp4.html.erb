@@ -1,0 +1,40 @@
+<div class="typeColsCPs">
+	<div class="logoTop">
+		<%= image_tag 'logo.png' %>
+	</div>
+
+	<div class="cpLinks" id="links">
+		<h2 class="activeA"><a href="">Users</a></h2>
+		<h2><a href="">Feeds</a></h2>
+		<h2><a href="">Tests</a></h2>
+	</div>
+
+
+	<div class="pagesBro">
+		<hr>
+		<a href="/consumer"><button class="active" style="border-color: #6DEBD1;color: #6DEBD1">Consumer DB</button></a>
+		<a href="/corporate"><button style="background:#6DD9EB">Corporate DB</button></a>
+
+		<br>
+		<br>
+		<a href="http://cp3.fittr.com"><button style="background:#6D9CEB">Workout DB</button></a>
+		<a href="/crash-reports"><button  style="background:#EB6D80">Crash Reports</button></a>
+
+		<br>
+		<br>
+		<a href="http://devwiki.fittr.com/"><button>Fittr Wiki</button></a>
+		<a href="http://fittr.slack.com/"><button style="background:#EBA06D">Slack</button></a>
+		<br>
+		<br>
+
+	</div>
+</div>
+
+
+
+<div id="content">
+	<div class="hidden"><%= render 'home/consumer' %></div>
+	<div class="hidden"><%= render 'home/corporate' %></div>
+	<div class="hidden"><%= render 'home/manageIt' %></div>
+	<div class="hidden"><%= render 'home/crash_reports' %></div>
+</div>
